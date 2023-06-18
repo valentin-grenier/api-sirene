@@ -1,0 +1,10 @@
+@use '../../styles/variables' as v;
+
+.App {
+  width: 75%;
+  max-width: 750px;
+  margin: 2rem auto;
+  padding: 1em;
+  background: v.$color-bg-alt;
+  border-radius: v.$radius-big;
+}

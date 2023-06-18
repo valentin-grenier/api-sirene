@@ -1,0 +1,11 @@
+@use '../../styles/variables' as v;
+
+#header {
+  margin-bottom: 1em;
+
+  h1 {
+    font-size: 4em;
+    color: v.$color-highlight;
+    text-align: center;
+  }
+}
