@@ -2,6 +2,8 @@ import './App.scss';
 
 import Header from '../Header/Header';
 import SearchBar from '../SearchBar/SearchBar';
+import Result from '../Result/Result';
+
 import { useState } from 'react';
 
 const App = () => {
@@ -10,8 +12,11 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
-      <SearchBar />
+      <div className="header">
+        <Header />
+        <SearchBar />
+      </div>
+      <Result />
     </div>
   );
 };

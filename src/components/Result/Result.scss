@@ -1,0 +1,27 @@
+@use '../../styles/variables' as v;
+
+.result {
+  margin-top: 2em;
+  padding: 2em;
+  background: v.$color-bg-alt;
+  border-radius: v.$radius-big;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+
+  & div {
+    margin: auto;
+    width: 30%;
+
+    h3 {
+      font-size: 1em;
+      font-weight: 500;
+      margin-bottom: 0.5em;
+
+      svg {
+        vertical-align: bottom;
+        margin-right: 0.25em;
+      }
+    }
+  }
+}

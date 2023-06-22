@@ -4,7 +4,10 @@
   width: 75%;
   max-width: 750px;
   margin: 2rem auto;
-  padding: 1em;
-  background: v.$color-bg-alt;
-  border-radius: v.$radius-big;
+
+  .header {
+    padding: 2em 1em;
+    background: v.$color-bg-alt;
+    border-radius: v.$radius-big;
+  }
 }
