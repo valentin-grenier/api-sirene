@@ -45,7 +45,7 @@ const SearchBar = () => {
         Recherchez une entreprise inscrite au répertoire SIRENE en un
         clic&nbsp;!
       </h2>
-      <h3>Le numéro SIRET de l'entreprise</h3>
+      <h3>Le numéro SIREN de l'entreprise</h3>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
           <BsSearch />
@@ -55,9 +55,11 @@ const SearchBar = () => {
             placeholder="Numéro SIRET"
             value={inputValue}
             onChange={handleChange}
+            maxLength={9}
           />
         </div>
       </form>
+      <span>Il doit contenir 9 chiffres</span>
     </div>
   );
 };
