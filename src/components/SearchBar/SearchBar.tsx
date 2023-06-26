@@ -2,14 +2,15 @@
 import './SearchBar.scss';
 import { BsSearch } from 'react-icons/bs';
 import axios from 'axios';
+import { useState } from 'react';
 
 const SearchBar = () => {
   // State input value
-  //const [inputValue, setInputValue] = useState('');
+  const [inputValue, setInputValue] = useState('840004394');
 
   // API
   const apiKey = 'Au7jZeGsdNBQ6oPYJI0ocx6uDzFghlwY';
-  const apiUrl = 'https://data.siren-api.fr/v3/unites_legales/840004394';
+  const apiUrl = `https://data.siren-api.fr/v3/unites_legales/${inputValue}`;
 
   const getData = async () => {
     try {
@@ -25,11 +26,11 @@ const SearchBar = () => {
   };
 
   // Handle input change
-  // const handleChange = (event: {
-  //   target: { value: SetStateAction<string> };
-  // }) => {
-  //   setInputValue(event.target.value);
-  // };
+  const handleChange = (event: {
+    target: { value: SetStateAction<string> };
+  }) => {
+    setInputValue(event.target.value);
+  };
 
   const handleSubmit = async (event: { preventDefault: () => void }) => {
     event.preventDefault();
@@ -52,7 +53,8 @@ const SearchBar = () => {
             type="search"
             name="search-siret"
             placeholder="Numéro SIRET"
-            // onChange={handleChange}
+            value={inputValue}
+            onChange={handleChange}
           />
         </div>
       </form>
