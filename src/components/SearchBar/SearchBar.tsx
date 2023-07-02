@@ -30,7 +30,7 @@ const SearchBar = ({ fetchAPI, siren, setSiren }: SearchBarProps) => {
       <form onSubmit={handleSubmit}>
         <div className="input-group">
           <input
-            type="search"
+            type="number"
             name="search-siret"
             placeholder="Numéro SIRET"
             value={siren}
