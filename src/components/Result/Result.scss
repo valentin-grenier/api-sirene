@@ -8,6 +8,17 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
+  opacity: 0;
+  animation: fadeInAnimation 150ms ease-in forwards;
+
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   & div {
     margin: auto;
