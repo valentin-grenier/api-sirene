@@ -12,6 +12,9 @@ const Footer = () => {
         <a href="https://siren-api.fr/" target="_blank">
           API Siren
         </a>
+        <a href="https://github.com/valentin-grenier/portfolio" target="_blank">
+          - V1.0
+        </a>
       </p>
     </footer>
   );
