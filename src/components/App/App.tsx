@@ -10,7 +10,7 @@ const App = () => {
   const [siren, setSiren] = useState('');
   const [searchResult, setSearchResult] = useState(null);
 
-  const [errorStatus, setErrorStatus] = useState(true);
+  const [errorStatus, setErrorStatus] = useState(false);
   const [errorMessage, setErrorMessage] = useState('Une erreur est survenue.');
 
   // Get the data from the API through Express server

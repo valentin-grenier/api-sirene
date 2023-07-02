@@ -1,7 +1,7 @@
 // import { SetStateAction, useState } from 'react';
+import { ChangeEvent } from 'react';
 import './SearchBar.scss';
-import { BsSearch } from 'react-icons/bs';
-import { useState } from 'react';
+import Button from './Button/Button';
 
 interface SearchBarProps {
   fetchAPI: Function;
@@ -11,7 +11,7 @@ interface SearchBarProps {
 
 const SearchBar = ({ fetchAPI, siren, setSiren }: SearchBarProps) => {
   // Handle input change
-  const handleChange = (event) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSiren(event.target.value);
   };
 
@@ -29,7 +29,6 @@ const SearchBar = ({ fetchAPI, siren, setSiren }: SearchBarProps) => {
       <h3>Le numéro SIREN de l'entreprise</h3>
       <form onSubmit={handleSubmit}>
         <div className="input-group">
-          <BsSearch />
           <input
             type="search"
             name="search-siret"
@@ -39,6 +38,7 @@ const SearchBar = ({ fetchAPI, siren, setSiren }: SearchBarProps) => {
             maxLength={9}
           />
         </div>
+        <Button />
       </form>
       <span>Il doit contenir 9 chiffres</span>
     </div>

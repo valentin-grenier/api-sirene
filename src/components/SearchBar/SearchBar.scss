@@ -28,12 +28,14 @@
   }
 
   form {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
     margin-bottom: 1em;
 
     .input-group {
       display: flex;
       align-items: center;
-      margin-top: 1em;
 
       input {
         border: none;

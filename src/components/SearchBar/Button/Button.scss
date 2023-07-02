@@ -1,0 +1,15 @@
+@use '../../../styles/variables' as v;
+
+button {
+  border: none;
+  padding: 1em;
+  color: v.$color-bg-alt;
+  background: v.$color-highlight;
+  border-radius: v.$radius-small;
+  cursor: pointer;
+  transition: 200ms;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
