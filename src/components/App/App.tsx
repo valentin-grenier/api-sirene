@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const App = () => {
   const [siren, setSiren] = useState('');
-  const [searchResult, setSearchResult] = useState({});
+  const [searchResult, setSearchResult] = useState(null);
 
   const [errorMessage, setErrorMessage] = useState('');
 
@@ -30,7 +30,7 @@ const App = () => {
         <Header />
         <SearchBar fetchAPI={fetchAPI} siren={siren} setSiren={setSiren} />
       </div>
-      <Result />
+      <Result searchResult={searchResult} />
     </div>
   );
 };
