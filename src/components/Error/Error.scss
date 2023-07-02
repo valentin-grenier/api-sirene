@@ -7,8 +7,8 @@
   transform: translateX(-50%);
   transition: 750ms;
 
-  background: rgba(255, 255, 255, 0.5);
-  border: solid 2px rgba(255, 255, 255, 1);
+  background: v.$color-highlight-alt;
+  border: solid 2px v.$color-highlight;
   padding: 1em 2em;
   border-radius: v.$radius-small;
 

@@ -44,6 +44,16 @@
         color: v.$color-text;
         padding: 0.75em 1em;
         font-size: 1em;
+        transition: 200ms;
+
+        &:hover {
+          opacity: 0.5;
+        }
+
+        &:active,
+        &:focus {
+          outline-color: v.$color-highlight;
+        }
       }
 
       svg {
