@@ -2,18 +2,19 @@
 
 .error {
   position: absolute;
-  bottom: -5em;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 2em;
+  right: -20em;
   transition: 750ms;
 
-  background: v.$color-bg;
+  background: v.$color-secondary;
   border: solid 2px v.$color-primary;
   padding: 1em 2em;
   border-radius: v.$radius-small;
   text-align: center;
+  font-weight: 600;
+  color: v.$color-primary;
 
   &-active {
-    bottom: 4em;
+    right: 2em;
   }
 }

@@ -4,6 +4,8 @@ import Header from '../Header/Header';
 import SearchBar from '../SearchBar/SearchBar';
 import Result from '../Result/Result';
 import Error from '../Error/Error';
+import Footer from '../Footer/Footer';
+
 import { useState } from 'react';
 
 const App = () => {
@@ -40,6 +42,7 @@ const App = () => {
       </div>
       <Result searchResult={searchResult} />
       <Error errorStatus={errorStatus} errorMessage={errorMessage} />
+      <Footer />
     </div>
   );
 };
