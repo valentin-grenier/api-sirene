@@ -12,7 +12,7 @@
     text-align: center;
     line-height: 1.25em;
     width: 75%;
-    margin: 0 auto 1em;
+    margin: 0 auto 1.5em;
   }
 
   h3 {
@@ -55,6 +55,12 @@
           outline-color: v.$color-primary;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    h2 {
+      font-size: 1.25em;
     }
   }
 }
