@@ -30,7 +30,7 @@ const App = () => {
       })
       .catch((error) => {
         setErrorStatus(true);
-        setErrorMessage('Une erreur est survenue.');
+        setErrorMessage('Une erreur est survenue: ' + error);
       });
   };
 

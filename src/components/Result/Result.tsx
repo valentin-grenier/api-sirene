@@ -10,7 +10,7 @@ import {
 } from 'react-icons/md';
 
 interface DataTypes {
-  length: Number | undefined;
+  length: number | undefined;
   siren: number | undefined;
   prenom_1: string | undefined;
   nom: string | undefined;
@@ -27,7 +27,7 @@ interface DataTypes {
 }
 
 interface ResultProps {
-  searchResult: DataTypes;
+  searchResult: DataTypes | null;
 }
 
 const Result = ({ searchResult }: ResultProps) => {
