@@ -52,15 +52,8 @@
 
         &:active,
         &:focus {
-          outline-color: v.$color-highlight;
+          outline-color: v.$color-primary;
         }
-      }
-
-      svg {
-        width: auto;
-        height: 1.5em;
-        fill: v.$color-text;
-        margin-right: 0.5em;
       }
     }
   }

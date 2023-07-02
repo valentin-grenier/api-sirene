@@ -5,7 +5,7 @@ const Button = () => {
   return (
     <>
       <button type="submit">
-        <BsSearch size={14} />
+        <BsSearch />
       </button>
     </>
   );

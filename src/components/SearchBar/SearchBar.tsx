@@ -40,7 +40,7 @@ const SearchBar = ({ fetchAPI, siren, setSiren }: SearchBarProps) => {
         </div>
         <Button />
       </form>
-      <span>Il doit contenir 9 chiffres</span>
+      <span>Il doit contenir 9 chiffres, sans espaces</span>
     </div>
   );
 };

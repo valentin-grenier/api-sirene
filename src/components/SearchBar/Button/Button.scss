@@ -3,13 +3,19 @@
 button {
   border: none;
   padding: 1em;
-  color: v.$color-bg-alt;
-  background: v.$color-highlight;
+  color: v.$color-accent;
+  background: v.$color-primary;
   border-radius: v.$radius-small;
   cursor: pointer;
   transition: 200ms;
 
   &:hover {
     transform: scale(0.95);
+  }
+
+  svg {
+    width: auto;
+    height: 1em;
+    fill: v.$color-secondary;
   }
 }
